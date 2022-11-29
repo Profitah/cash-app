@@ -5,16 +5,10 @@
     font-style: normal;
 }
 
-.timetimetime{
+#time{
+    font-family: 'HBIOS-SYS';
     background-color:black;
-    width: 100%;
-    height: 3em;
-    vertical-align:center;
     color:red; 
     -webkit-text-stroke: 1px darkred;
-}
-
-  .time_time{  
-    font-family: 'HBIOS-SYS'; 
     text-align: center; 
 }

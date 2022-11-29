@@ -1,12 +1,14 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{% static 'css/loading.css' %}" rel="stylesheet">
     <title>나만의 가계부 만들기</title>
 </head>
 <body>
+    <div id="loader"></div>
     <h2>Read</h2>
     <form method = "GET">
         <select name="sort" id="sort">
@@ -20,6 +22,8 @@
         <p>좋아요수: {{cashbooks.like_count}}</p>
         {% endfor %}
     </form>
+
     
 </body>
+<script src="{% static 'js/loading.js' %}"></script>
 </html>

@@ -1,6 +1,7 @@
 from pickle import TRUE
 from django.shortcuts import render, redirect, get_object_or_404
 from .forms import CashbookForm, CommentForm, HashtagForm
+import requests
 from django.utils import timezone
 from .models import Cashbook, Comment,  Hashtag
 from django.contrib.auth.forms import AuthenticationForm

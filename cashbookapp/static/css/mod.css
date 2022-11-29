@@ -123,7 +123,7 @@ section {
     color: orange;
   }
 
-  section.dark .timetimetime{
+  section.dark #time{
       background-color:darkslategrey;
       color:green; 
       -webkit-text-stroke: 1px darkgreen;

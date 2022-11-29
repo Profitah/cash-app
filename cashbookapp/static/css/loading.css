@@ -1,0 +1,7 @@
+#loader{
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	background: lightpink url('https://2.bp.blogspot.com/-SB_A7eGFrLY/WVz4HaiGQgI/AAAAAAAAATo/T1c-FhLegwUmIXEw67GuKZxNnI_8bFSYQCLcBGAs/s1600/2016_12_8_4.gif') no-repeat center;
+	z-index: 999;
+}
