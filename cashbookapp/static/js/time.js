@@ -1,13 +1,37 @@
-let handleId = 0; 
-const h1 = document.getElementById("time")
- 
-function getTime(){
-  const date = new Date()
-  const hour = date.getHours();
-  const minutes = date.getMinutes();
-  const seconds = date.getSeconds();
-  const time = `${hour<10?'0'+hour:hour}:${minutes<10?'0'+minutes:minutes}:${seconds<10?'0'+seconds:seconds}`
-  h1.textContent = time;
-}
- 
-getTime()
+function Time() {
+  var date = new Date();
+  var hour = date.getHours();
+  var minute = date.getMinutes();
+  var second = date.getSeconds();
+  var period = "";
+  if (hour >= 12) {
+  period = "PM";
+  } else {
+  period = "AM";
+  }
+  if (hour == 0) {
+  hour = 12;
+  } else {
+  if (hour > 12) {
+  hour = hour - 12;
+  }
+  }
+
+  hour = update(hour);
+  minute = update(minute);
+  second = update(second);
+  
+  document.getElementById("time").innerText = hour + " : " + minute + " : " + second + " " + period;
+  
+  setTimeout(Time, 1000);
+ }
+
+ function update(t) {
+  if (t < 10) {
+  return "0" + t;
+  }
+  else {
+  return t;
+  }
+ }
+ Time();
